@@ -1,0 +1,27 @@
+.container {
+  margin: 10px;
+  border: 1px solid #bbbbbb;
+}
+
+.content {
+  padding: 10px;
+}
+
+.title {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row > button {
+  margin-right: 5px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

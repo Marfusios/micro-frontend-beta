@@ -1,0 +1,17 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  margin-bottom: 2px;
+}
+
+.row > .column {
+  margin-right: 20px;
+}
