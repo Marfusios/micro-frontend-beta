@@ -1,0 +1,34 @@
+<div class="content">
+  <div class="column">
+
+    <div class="row">
+      <button class="btn btn-outline">Regular</button>
+      <button class="btn btn-success-outline">Success-Outline</button>
+      <button class="btn btn-info-outline">Info</button>
+      <button class="btn btn-warning-outline">Warning</button>
+      <button class="btn btn-danger-outline">Danger</button>
+      <button class="btn btn-outline" disabled>Disabled</button>
+    </div>
+
+    <div class="row">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-danger" disabled>Disabled</button>
+    </div>
+
+    <div class="row">
+      <button class="btn btn-link">Regular</button>
+      <button class="btn btn-link" disabled>Disabled</button>
+      <button class="btn btn-sm btn-link">Regular</button>
+      <button class="btn btn-sm btn-link" disabled>Disabled</button>
+    </div>
+
+    <div class="row">
+      <button [clrLoading]="validateLoading" class="btn btn-info-outline" (click)="validateDemo()">Validate</button>
+      <button [clrLoading]="submitLoading" type="submit" class="btn btn-success-outline" (click)="submitDemo()">Submit</button>
+    </div>
+
+  </div>
+</div>

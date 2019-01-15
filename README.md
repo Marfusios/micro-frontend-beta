@@ -16,8 +16,8 @@ Deployed at: [mkotas.cz/micro-frontend-beta](http://mkotas.cz/micro-frontend-bet
 * local deployment
     * `npm run package`
     * `npm run server`
-    * open browser at 'localhost:3333'
-    * bundle can be downloaded from 'localhost:3333/bundle.umd.js'
+    * open browser at 'localhost:4444'
+    * bundle can be downloaded from 'localhost:4444/bundle.umd.js'
 * remote deployment
     * `npm build-deploy`
     * copy content of 'deployment' directory into web server
