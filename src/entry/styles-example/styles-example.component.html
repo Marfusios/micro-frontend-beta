@@ -1,3 +1,89 @@
-<p>
-  styles-example works!
-</p>
+<div class="row">
+  <div class="col-xs-12 col-sm-6">
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Here is a progress bar at the very top of a card.</p>
+        <div class="progress-block">
+          <label>Label</label>
+          <div class="progress-static">
+            <div class="progress-meter" data-value="20"></div>
+          </div>
+        </div>
+        <div class="progress-block">
+          <label>Longer Label</label>
+          <div class="progress-static">
+            <div class="progress-meter" data-value="45"></div>
+          </div>
+        </div>
+        <div class="progress-block">
+          <label>Really, Really, Really Long Label</label>
+          <div class="progress success">
+            <progress value="55" max="100" data-displayval="...%"></progress>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="progress-static top">
+          <div class="progress-meter" data-value="80"></div>
+        </div>
+        <a routerLink="../" class="card-link">Click</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>Decimal</th>
+    <th>Hexadecimal</th>
+    <th>Binary</th>
+    <th>Roman Numeral</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>I</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>5</td>
+    <td>101</td>
+    <td>V</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>A</td>
+    <td>1010</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>F</td>
+    <td>1111</td>
+    <td>XV</td>
+  </tr>
+  </tbody>
+</table>
+
+<br/>
+
+<div class="inputs">
+  <div class="form-group">
+    <label for="selects_1">This is a select box</label>
+    <div class="select">
+      <select id="selects_1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>50000000</option>
+      </select>
+    </div>
+  </div>
+</div>
+

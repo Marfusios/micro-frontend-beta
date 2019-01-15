@@ -1,7 +1,26 @@
 <div class="main-container">
-  <header class="header">
-    <span>BETA microservice</span>
-  </header>
+    <header class="header">
+      <div class="branding">
+        <a routerLink="./" class="nav-link">
+          <!--<clr-icon shape="vm-bug"></clr-icon>-->
+          <span class="title">BETA microservice</span>
+        </a>
+      </div>
+      <div class="header-actions">
+        <clr-dropdown>
+          <button class="nav-icon" clrDropdownTrigger>
+            <span>settings</span>
+            <clr-icon shape="cog"></clr-icon>
+            <clr-icon shape="caret down"></clr-icon>
+          </button>
+          <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+            <a routerLink="./buttons" clrDropdownItem>Buttons</a>
+            <a routerLink="./assets" clrDropdownItem>Assets</a>
+            <a routerLink="./styles" clrDropdownItem>Styles</a>
+          </clr-dropdown-menu>
+        </clr-dropdown>
+      </div>
+    </header>
   <div class="content-container">
     <div class="content-area">
       <router-outlet></router-outlet>
