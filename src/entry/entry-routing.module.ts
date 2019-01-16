@@ -5,6 +5,7 @@ import {ButtonsExampleComponent} from './buttons-example/buttons-example.compone
 import {AssetsExampleComponent} from './assets-example/assets-example.component';
 import {StylesExampleComponent} from './styles-example/styles-example.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import { SharedExampleComponent } from './shared-example/shared-example.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
       { path: 'buttons', component: ButtonsExampleComponent },
       { path: 'assets', component: AssetsExampleComponent },
       { path: 'styles', component: StylesExampleComponent },
+      { path: 'shared', component: SharedExampleComponent },
       { path: '', component: DashboardComponent },
     ]
   },

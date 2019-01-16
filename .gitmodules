@@ -1,0 +1,3 @@
+[submodule "micro-frontend-shared"]
+	path = micro-frontend-shared
+	url = https://github.com/Marfusios/micro-frontend-shared

@@ -14,6 +14,7 @@
             <clr-icon shape="caret down"></clr-icon>
           </button>
           <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+            <a routerLink="./shared" clrDropdownItem>Shared Library</a>
             <a routerLink="./buttons" clrDropdownItem>Buttons</a>
             <a routerLink="./assets" clrDropdownItem>Assets</a>
             <a routerLink="./styles" clrDropdownItem>Styles</a>
@@ -26,6 +27,7 @@
       <router-outlet></router-outlet>
     </div>
     <clr-vertical-nav>
+      <a clrVerticalNavLink routerLink="./shared" routerLinkActive="active">Shared Library</a>
       <a clrVerticalNavLink routerLink="./buttons" routerLinkActive="active">Buttons</a>
       <a clrVerticalNavLink routerLink="./assets" routerLinkActive="active">Assets</a>
       <a clrVerticalNavLink routerLink="./styles" routerLinkActive="active">Styles</a>
