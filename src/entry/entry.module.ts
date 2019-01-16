@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Injector, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ClarityModule } from '@clr/angular';
@@ -11,6 +11,8 @@ import { StylesExampleComponent } from './styles-example/styles-example.componen
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EntryModule as ComponentsModule } from 'micro-frontend-shared/src/entry/entry.module';
 import { SharedExampleComponent } from './shared-example/shared-example.component';
+import { ButtonComponent } from './button/button.component';
+import { createCustomElement } from '@angular/elements';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,38 @@ import { SharedExampleComponent } from './shared-example/shared-example.componen
     StylesExampleComponent,
     SharedExampleComponent,
     DashboardComponent,
+    DashboardComponent,
+    ButtonComponent,
   ],
   imports: [
     CommonModule,
     ComponentsModule,
     ClarityModule,
-    EntryRoutingModule,
+    EntryRoutingModule
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+  ],
+  entryComponents: [
+    ButtonComponent,
   ]
 })
-export class EntryModule { }
+export class EntryModule {
+  constructor(private injector: Injector) {
+    this.ngDoBootstrap();
+  }
+
+  ngDoBootstrap() {
+    this.defineCustomElement('ko-button', ButtonComponent);
+  }
+
+  private defineCustomElement(customElementTitle, component) {
+    if (customElements.get(customElementTitle)) {
+      return;
+    }
+    const customElement = createCustomElement(component, {
+      injector: this.injector
+    });
+    customElements.define('ko-button', customElement);
+  }
+}

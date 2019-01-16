@@ -30,5 +30,13 @@
       <button [clrLoading]="submitLoading" type="submit" class="btn btn-success-outline" (click)="submitDemo()">Submit</button>
     </div>
 
+    <div class="row">
+      <p>Test WebComponent:</p>
+    </div>
+    <div class="row">
+      <ko-button *ngIf="!hideButton" label="CustomElementButton"></ko-button><br>
+      <button class="btn btn-warning-outline" (click)="hideButton = !hideButton">Toggle WebComponent (throws error)</button>
+    </div>
+
   </div>
 </div>
