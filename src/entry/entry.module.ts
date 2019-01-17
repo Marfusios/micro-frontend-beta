@@ -1,7 +1,7 @@
 import { NgModule, Injector, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ClarityModule } from '@clr/angular';
+import { ComponentsModule } from '../shared';
 
 import { EntryRoutingModule } from './entry-routing.module';
 import { EntryComponent } from './entry.component';
@@ -9,7 +9,6 @@ import { AssetsExampleComponent } from './assets-example/assets-example.componen
 import { ButtonsExampleComponent } from './buttons-example/buttons-example.component';
 import { StylesExampleComponent } from './styles-example/styles-example.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { EntryModule as ComponentsModule } from 'micro-frontend-shared/src/entry/entry.module';
 import { SharedExampleComponent } from './shared-example/shared-example.component';
 import { ButtonComponent } from './button/button.component';
 import { createCustomElement } from '@angular/elements';
