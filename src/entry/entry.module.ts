@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedExampleComponent } from './shared-example/shared-example.component';
 import { ButtonComponent } from './button/button.component';
 import { createCustomElement } from '@angular/elements';
+import { WebcomponentsExampleComponent } from './webcomponents-example/webcomponents-example.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { createCustomElement } from '@angular/elements';
     DashboardComponent,
     DashboardComponent,
     ButtonComponent,
+    WebcomponentsExampleComponent,
   ],
   imports: [
     CommonModule,
