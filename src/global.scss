@@ -9,3 +9,11 @@
   display: flex;
   flex-direction: column;
 }
+
+/*
+  This class is used in Alpha micro frontend and shouldn't be applied.
+  The all Beta styles should be encapsulated by shadowing.
+ */
+.button {
+  background-color: aqua !important;
+}
