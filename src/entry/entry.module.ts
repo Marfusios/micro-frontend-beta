@@ -39,10 +39,6 @@ import { createCustomElement } from '@angular/elements';
 })
 export class EntryModule {
   constructor(private injector: Injector) {
-    this.ngDoBootstrap();
-  }
-
-  ngDoBootstrap() {
     this.defineCustomElement('ko-button', ButtonComponent);
   }
 
