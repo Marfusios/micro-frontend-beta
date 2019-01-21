@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertService } from 'src/shared/src/services';
+import { AlertService } from '../../shared';
 
 @Component({
   selector: 'app-shared-example',
