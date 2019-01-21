@@ -1,3 +1,12 @@
 <h1>Shared Library Examples</h1>
 
-<mfs-label>Label example</mfs-label>
+<app-actions (saved)="onSave()">
+  <app-field text="Name">
+    <app-input></app-input>
+  </app-field>
+  <app-field text="Message" subText="optional">
+    <app-input></app-input>
+  </app-field>
+</app-actions>
+
+<p>Created using <a href="https://tachyons.io" target="_blank">Tachyons.io</a></p>
