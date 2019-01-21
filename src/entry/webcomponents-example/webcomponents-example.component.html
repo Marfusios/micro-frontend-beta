@@ -1,0 +1,7 @@
+<div class="row">
+  <p>Our button as WebComponent:</p>
+</div>
+<div class="column">
+  <ko-button *ngIf="!hideButton" label="CustomElementButton"></ko-button><br>
+  <button class="toggle-button" (click)="hideButton = !hideButton">Toggle WebComponent (throws error)</button>
+</div>

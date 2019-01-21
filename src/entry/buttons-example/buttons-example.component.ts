@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsExampleComponent implements OnInit {
 
-  hideButton = false;
   validateLoading = false;
   submitLoading = false;
 
