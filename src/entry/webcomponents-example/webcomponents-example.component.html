@@ -1,7 +1,12 @@
 <div class="row">
-  <p>Our button as WebComponent:</p>
+  <p>Our example page as a webcomponent:</p>
 </div>
 <div class="column">
-  <ko-button *ngIf="!hideButton" label="CustomElementButton"></ko-button><br>
-  <button class="toggle-button" (click)="hideButton = !hideButton">Toggle WebComponent (throws error)</button>
+  <webcomponent-page></webcomponent-page>
+  <hr>
+
+  <h2>Test user-poll as standalone webcomponent</h2>
+  <span>As standalone component, it doesn't have bootstrap styles, but receives styles from parent.</span>
+  <span>All titles should be red, webcomponent-page is isolated with ViewEncapsulation.Native and user-poll with ViewEncapsulation.None</span>
+  <user-poll></user-poll>
 </div>

@@ -1,4 +1,4 @@
-import { NgModule, Injector, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ClarityModule } from '@clr/angular';
 import { ComponentsModule } from '../shared';
@@ -10,8 +10,6 @@ import { ButtonsExampleComponent } from './buttons-example/buttons-example.compo
 import { StylesExampleComponent } from './styles-example/styles-example.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedExampleComponent } from './shared-example/shared-example.component';
-import { ButtonComponent } from './button/button.component';
-import { createCustomElement } from '@angular/elements';
 import { WebcomponentsExampleComponent } from './webcomponents-example/webcomponents-example.component';
 
 @NgModule({
@@ -23,7 +21,6 @@ import { WebcomponentsExampleComponent } from './webcomponents-example/webcompon
     SharedExampleComponent,
     DashboardComponent,
     DashboardComponent,
-    ButtonComponent,
     WebcomponentsExampleComponent,
   ],
   imports: [
@@ -35,22 +32,27 @@ import { WebcomponentsExampleComponent } from './webcomponents-example/webcompon
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
   ],
-  entryComponents: [
-    ButtonComponent,
-  ]
 })
 export class EntryModule {
-  constructor(private injector: Injector) {
-    this.defineCustomElement('ko-button', ButtonComponent);
+  constructor() {
+    this.loadExternalScript('http://mkotas.cz/micro-frontend-webcomponents/bundle.min.js');
   }
 
-  private defineCustomElement(customElementTitle, component) {
-    if (customElements.get(customElementTitle)) {
+  private loadExternalScript(scriptUrl) {
+    let scriptExist = false;
+    document.querySelectorAll('script').forEach(s => {
+      if (s.src === scriptUrl) {
+        scriptExist = true;
+      }
+    });
+
+    if (scriptExist) {
       return;
     }
-    const customElement = createCustomElement(component, {
-      injector: this.injector
-    });
-    customElements.define('ko-button', customElement);
+
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = scriptUrl;
+    document.body.appendChild(script);
   }
 }
