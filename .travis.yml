@@ -8,7 +8,6 @@ branches:
     - gh-pages # will be deployed to, no need to build it
 
 script:
-  - cd ./src/shared && npm install && cd ../../ # Update shared library dependencies
   - npm run build-deploy # Generates the deployment folder with built angular app and umd bundle
 
 deploy:
