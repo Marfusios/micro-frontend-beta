@@ -7,6 +7,12 @@
         </a>
       </div>
       <div class="header-actions">
+        <div class="counter-item">
+          <div class="counter-content">
+            <span>Counter: </span>
+            <span>{{_counter$ | async}}</span>
+          </div>
+        </div>
         <clr-dropdown>
           <button class="nav-icon" clrDropdownTrigger>
             <span>settings</span>
