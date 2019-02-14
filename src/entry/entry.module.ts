@@ -11,6 +11,7 @@ import { StylesExampleComponent } from './styles-example/styles-example.componen
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedExampleComponent } from './shared-example/shared-example.component';
 import { WebcomponentsExampleComponent } from './webcomponents-example/webcomponents-example.component';
+import { StateExampleComponent } from './state-example/state-example.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { WebcomponentsExampleComponent } from './webcomponents-example/webcompon
     DashboardComponent,
     DashboardComponent,
     WebcomponentsExampleComponent,
+    StateExampleComponent,
   ],
   imports: [
     CommonModule,

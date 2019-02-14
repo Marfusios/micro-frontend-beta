@@ -1,0 +1,18 @@
+@import "../../global";
+
+.content {
+  padding: 10px;
+}
+
+.counter {
+  border: #70B9E8 dotted 1px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 200px;
+  font-family: monospace;
+}
+
+.counter-label {
+  font-weight: bold;
+}
