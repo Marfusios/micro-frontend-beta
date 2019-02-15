@@ -14,7 +14,7 @@
     "package": "DEBUG=true ng-packagr -p ng-package.json && cpx \"./deployment-package/bundles/*\" ./deployment",
     "package:watch": "ng-packagr -p ng-package.json --watch && cpx \"./deployment-package/bundles/*\" ./deployment",
     "package:global": "ng-packagr -p ng-package.global.json && cpx \"./global-package/bundles/*\" ./deployment",
-    "build-deploy": "npm install && ng build --prod --output-path=deployment --base-href /micro-frontend-beta/ && npm run package",
+    "build-deploy": "npm install && ng build --prod --output-path=deployment --base-href /micro-frontend-beta/ && npm run package:global && npm run package",
     "server": "http-server deployment -p 4444 --cors -c-1"
   },
   "private": true,
