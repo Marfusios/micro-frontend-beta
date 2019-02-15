@@ -13,6 +13,7 @@ import { SharedExampleComponent } from './shared-example/shared-example.componen
 import { StateExampleComponent } from './state-example/state-example.component';
 import { StylesExampleComponent } from './styles-example/styles-example.component';
 import { WebcomponentsExampleComponent } from './webcomponents-example/webcomponents-example.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { WebcomponentsExampleComponent } from './webcomponents-example/webcompon
     StateExampleComponent,
   ],
   imports: [
+    CommonModule,
     ClarityModule,
     EntryRoutingModule,
     GlobalModule,
