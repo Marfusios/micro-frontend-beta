@@ -1,3 +1,6 @@
 [submodule "src/shared"]
 	path = src/shared
 	url = https://github.com/Marfusios/micro-frontend-shared
+[submodule "src/gateway"]
+	path = src/gateway
+	url = https://github.com/Marfusios/micro-frontend-gateway

@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "lib": {
+    "entryFile": "src/global_api.ts",
+    "flatModuleFile": "global.bundle"
+  },
+  "dest": "global-package",
+  "whitelistedNonPeerDependencies": [
+    "."
+  ]
+}

@@ -2,9 +2,11 @@
 
 # compiled output
 /dist
+/global-package
 /tmp
 /out-tsc
 /deployment
+/deployment-global
 /deployment-package
 
 # dependencies

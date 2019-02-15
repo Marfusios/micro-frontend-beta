@@ -1,16 +1,17 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { ClarityModule } from '@clr/angular';
-import { ComponentsModule } from '../shared';
+import { StoreModule } from '@ngrx/store';
 
-import { EntryRoutingModule } from './entry-routing.module';
-import { EntryComponent } from './entry.component';
+import { GlobalModule } from '../global/global.module';
 import { AssetsExampleComponent } from './assets-example/assets-example.component';
 import { ButtonsExampleComponent } from './buttons-example/buttons-example.component';
-import { StylesExampleComponent } from './styles-example/styles-example.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { EntryRoutingModule } from './entry-routing.module';
+import { EntryComponent } from './entry.component';
 import { SharedExampleComponent } from './shared-example/shared-example.component';
+import { StylesExampleComponent } from './styles-example/styles-example.component';
 import { WebcomponentsExampleComponent } from './webcomponents-example/webcomponents-example.component';
+import { ComponentsModule } from '../shared';
 
 @NgModule({
   declarations: [
@@ -24,10 +25,11 @@ import { WebcomponentsExampleComponent } from './webcomponents-example/webcompon
     WebcomponentsExampleComponent,
   ],
   imports: [
-    CommonModule,
-    ComponentsModule,
     ClarityModule,
-    EntryRoutingModule
+    EntryRoutingModule,
+    GlobalModule,
+    ComponentsModule,
+    StoreModule.forRoot({}),
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
