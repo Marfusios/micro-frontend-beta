@@ -17,4 +17,5 @@ body {
   font-size: 0.5833rem;
 }
 
-@import './shared/src/styles.scss';
+@import './shared/src/styles';
+@import './gateway/src/styles';
