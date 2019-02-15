@@ -1,0 +1,16 @@
+<h1>Global state example</h1>
+
+<div class="content">
+
+  <button class="btn btn-success" (click)="increment()">+</button>
+
+  <div class="counter"> <span class="counter-label">Count: </span> {{ count$ | async }}</div>
+
+  <button class="btn btn-danger" (click)="decrement()">-</button>
+
+  <button class="btn" (click)="reset()">Reset Counter</button>
+
+
+</div>
+
+

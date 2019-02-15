@@ -4,3 +4,18 @@
   line-height: 2.5;
   margin-left: 10px;
 }
+
+.header-actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.counter-content {
+  margin: auto;
+}

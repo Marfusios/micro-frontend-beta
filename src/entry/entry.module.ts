@@ -3,15 +3,16 @@ import { ClarityModule } from '@clr/angular';
 import { StoreModule } from '@ngrx/store';
 
 import { GlobalModule } from '../global/global.module';
+import { ComponentsModule } from '../shared';
 import { AssetsExampleComponent } from './assets-example/assets-example.component';
 import { ButtonsExampleComponent } from './buttons-example/buttons-example.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EntryRoutingModule } from './entry-routing.module';
 import { EntryComponent } from './entry.component';
 import { SharedExampleComponent } from './shared-example/shared-example.component';
+import { StateExampleComponent } from './state-example/state-example.component';
 import { StylesExampleComponent } from './styles-example/styles-example.component';
 import { WebcomponentsExampleComponent } from './webcomponents-example/webcomponents-example.component';
-import { ComponentsModule } from '../shared';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ComponentsModule } from '../shared';
     DashboardComponent,
     DashboardComponent,
     WebcomponentsExampleComponent,
+    StateExampleComponent,
   ],
   imports: [
     ClarityModule,
