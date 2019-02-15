@@ -19,7 +19,6 @@
   },
   "private": true,
   "bundledDependencies": [
-    "@angular/elements",
     "@clr/icons",
     "@clr/ui",
     "@clr/angular",
