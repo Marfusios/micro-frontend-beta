@@ -1,6 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { ClarityModule } from '@clr/angular';
-import { StoreModule } from '@ngrx/store';
 
 import { GlobalModule } from '../global/global.module';
 import { ComponentsModule } from '../shared';
@@ -32,8 +31,7 @@ import { CommonModule } from '@angular/common';
     ClarityModule,
     EntryRoutingModule,
     GlobalModule,
-    ComponentsModule,
-    StoreModule.forRoot({}),
+    ComponentsModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
